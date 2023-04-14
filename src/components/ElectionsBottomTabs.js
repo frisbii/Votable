@@ -11,14 +11,16 @@ export default function ElectionsBottomTabs() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-              return <TabBarIcon route={route} focused={focused} size={size} color={color} />;
-            },
-            
-          tabBarShowLabel: false,
-          tabBarActiveTintColor: '#3b82f6',
-          tabBarInactiveTintColor: 'gray',
-          headerShown: false
+        tabBarIcon: ({ focused, color, size }) => {
+            return <TabBarIcon route={route} focused={focused} size={size} color={color} />;
+        },
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: 'white',
+        tabBarInactiveTintColor: 'white',
+        tabBarActiveBackgroundColor: '#6b6bd1',
+        tabBarInactiveBackgroundColor: '#5454c4',
+
+        headerShown: false,
       })}
     >
         <Tab.Screen name="Races" component={RacesScreen} />
