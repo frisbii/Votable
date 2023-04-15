@@ -1,0 +1,244 @@
+[
+  {
+    "name": "General Election",
+    "date": "November 8, 2022",
+    "results": true,
+    "local": [
+      {
+        "race": "Forsyth County Sheriff",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Bobby F. Kimbrough",
+            "party": "Democratic",
+            "percent": 66.02,
+            "beliefs": ""
+          },
+          {
+            "name": "Ernie G. Leyba",
+            "party": "Republican",
+            "percent": 33.98,
+            "beliefs": ""
+          }
+        ]
+      },
+      {
+        "race": "Forsyth Soil and Water Conservation District Supervisor",
+        "spaces": 2,
+        "parties": false,
+        "candidates": [
+          {
+            "name": "Mark D. Apple",
+            "percent": 48.81,
+            "beliefs": ""
+          },
+          {
+            "name": "Toby Bost",
+            "percent": 49.37,
+            "beliefs": ""
+          },
+          {
+            "name": "Write-In",
+            "percent": 1.82,
+            "beliefs": ""
+          }
+        ]
+      }
+    ],
+    "state": [
+      {
+        "race": "NC House District 74",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Jeff Zenger",
+            "party": "Republican",
+            "percent": 52.37,
+            "beliefs": ""
+          },
+          {
+            "name": "Carla Catalan Day",
+            "party": "Democratic",
+            "percent": 47.63,
+            "beliefs": ""
+          }
+        ]
+      }
+    ],
+    "national": [
+      {
+        "race": "US Senate",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Cheri Beasley",
+            "party": "Democratic",
+            "percent": 54.54,
+            "beliefs": ""
+          },
+          {
+            "name": "Ted Budd",
+            "party": "Republican",
+            "percent": 43.28,
+            "beliefs": ""
+          },
+          {
+            "name": "Shannon W. Bray",
+            "party": "Libertarian",
+            "percent": 1.38,
+            "beliefs": ""
+          }
+        ]
+      },
+      {
+        "race": "US House, District 5",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Virginia Foxx",
+            "party": "Republican",
+            "percent": 44.36,
+            "beliefs": ""
+          },
+          {
+            "name": "Kyle Parrish",
+            "party": "Democratic",
+            "percent": 55.64,
+            "beliefs": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Primary Election",
+    "date": "May 17, 2023",
+    "results": false,
+    "local": [
+      {
+        "race": "Forsyth Clerk of Superior Court",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Denise Hines",
+            "party": "Democratic",
+            "beliefs": ""
+          },
+          {
+            "name": "Tina Flowers",
+            "party": "Democratic",
+            "beliefs": ""
+          },
+          {
+            "name": "John Snow",
+            "party": "Democratic",
+            "beliefs": ""
+          }
+        ]
+      },
+      {
+        "race": "Forsyth Board of Education At-Large (DEM)",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Dan Besse",
+            "party": "Democratic",
+            "beliefs": ""
+          },
+          {
+            "name": "Ted Kaplan",
+            "party": "Democratic",
+            "beliefs": ""
+          }
+        ]
+      }
+    ],
+    "state": [
+      {
+        "race": "NC House District 91 (REP)",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Kyle Hall",
+            "party": "Republican",
+            "beliefs": ""
+          },
+          {
+            "name": "James Douglas",
+            "party": "Republican",
+            "beliefs": ""
+          },
+          {
+            "name": "Stephen L. James",
+            "party": "Republican",
+            "beliefs": ""
+          }
+        ]
+      },{
+        "race": "NC Supreme Court Associate Justice 5 (REP)",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Trey Allen",
+            "party": "Republican",
+            "beliefs": ""
+          },
+          {
+            "name": "April C. Wood",
+            "party": "Republican",
+            "beliefs": ""
+          },
+          {
+            "name": "Victoria E. Prince",
+            "party": "Republican",
+            "beliefs": ""
+          }
+        ]
+      }
+    ],
+    "national": [
+      {
+        "race": "US Senate (DEM)",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Cheri Beasley",
+            "party": "Democratic",
+            "beliefs": ""
+          },
+          {
+            "name": "Alyssia Rose-Katherine Hammond",
+            "party": "Democratic",
+            "beliefs": ""
+          },
+          {
+            "name": "Constance Johnson",
+            "party": "Democratic",
+            "beliefs": ""
+          },
+          {
+            "name": "James L. Carr, Jr.",
+            "party": "Democratic",
+            "beliefs": ""
+          }
+        ]
+      },
+      {
+        "race": "US House, District 5 (REP)",
+        "parties": true,
+        "candidates": [
+          {
+            "name": "Virginia Foxx",
+            "party": "Republican",
+            "beliefs": ""
+          },
+          {
+            "name": "Michael Ackerman",
+            "party": "Republican",
+            "beliefs": ""
+          }
+        ]
+      }
+    ]
+  }
+]

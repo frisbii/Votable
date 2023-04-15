@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Image } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Image } from 'native-base';
 
 import TabBarIcon from './TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
@@ -8,16 +9,9 @@ import ElectionsBottomTabs from './ElectionsBottomTabs';
 
 const Tab = createBottomTabNavigator();
 
-function LogoTitle() {
-    return (
-      <Image
-        style={{ width: 150, height: 40 }}
-        source={require('../../assets/logo.png')}
-      />
-    );
-  }
-
 export default function MainBottomTabs() {
+  const insets = useSafeAreaInsets();
+  
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -29,13 +23,25 @@ export default function MainBottomTabs() {
         tabBarInactiveTintColor: 'white',
         tabBarActiveBackgroundColor: '#000080',
         tabBarInactiveBackgroundColor: '#1C1CA6',
+        tabBarStyle: {
+          backgroundColor: '#000080',
+          borderTopColor: 'transparent',
+          paddingBottom: insets.bottom,
+        },
 
         headerStyle: {
             backgroundColor: '#000080',
         },
         headerTintColor: 'white',
-        headerTitle: (props) => <LogoTitle {...props} /> ,
-        headerTitleAlign: 'center'
+        headerTitle: (props) => { return( 
+          <Image 
+            resizeMode='contain' 
+            style={{ width: 999, height: 30 }} 
+            source={require('../../assets/logo.png')} 
+            alt='logo'
+          /> 
+        )},
+        headerTitleAlign: 'center',
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen}/>

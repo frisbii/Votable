@@ -1,9 +1,9 @@
-import { HStack, Switch, VStack, View, Text, Spacer } from "native-base";
+import { HStack, Switch, VStack, View, Text, Spacer, Input, Heading } from "native-base";
 
-function SettingDef() {
+function SettingDef({ desc }) {
   return(
     <HStack alignItems='center'>
-      <Text fontSize='md'>does a thing</Text>
+      <Text fontSize='md'>{desc}</Text>
       <Spacer />
       <Switch />
     </HStack>
@@ -14,11 +14,10 @@ export default function SettingsScreen() {
   return(
     <View>
       <VStack m={8} space={4}>
-        <SettingDef />
-        <SettingDef />
-        <SettingDef />
-        <SettingDef />
-        <SettingDef />
+        <Heading>Votable <Text color='blue.800'>Settings</Text></Heading>
+        <SettingDef desc="Toggle Local elections (WIP)" />
+        <SettingDef desc="Toggle State elections (WIP)" />
+        <SettingDef desc="Toggle National elections (WIP)" />
       </VStack>
     </View>
   )

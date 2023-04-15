@@ -1,13 +1,25 @@
 import { Box, Pressable, HStack, Badge, Spacer, Flex, Text, VStack, Center, ScrollView, Avatar } from 'native-base';
 
+import appData from '../data/app_data.json'
+
+
 export default function HomeScreen({ navigation }) {
+  const daysUntil = (dateStr) => {
+    const date = new Date(dateStr);
+    const today = new Date();
+    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in one day
+    const diffInMs = date - today;
+    const diffInDays = Math.round(diffInMs / oneDay);
+    return diffInDays;
+  };  
+
   return (
     <ScrollView>
       <VStack space={4} padding={4} alignItems='center'>
-        <Text bold fontSize='3xl'>Hello, <Text color='blue.800'>Tyler</Text></Text>
+        <Text bold fontSize='3xl'>Hello, <Text color='blue.800'>{appData.username}</Text></Text>
 
         <Box alignItems="center">
-          <Pressable onPress={() => navigation.navigate('Races')} 
+          <Pressable onPress={() => navigation.navigate('Elections', { screen: 'Races' })} 
             rounded="8" borderWidth="1" borderColor="coolGray.300" shadow="1" bg="blue.50" p="5">
             <Box>
               <HStack>
@@ -16,20 +28,20 @@ export default function HomeScreen({ navigation }) {
                 </Badge>
                 <Spacer />
                 <Text>
-                  April 29
+                  May 17
                 </Text>
               </HStack>
               <Box alignItems='center'>
               <Text mt="3" fontWeight="medium" fontSize="3xl">
-                19 days away
+                {daysUntil('2023-05-17')} days away
               </Text>
               <Text fontWeight="medium" fontSize="xl">
-                Municipal General Election
+                Primary Elections
               </Text>
               </Box>
               <Text mt="2" fontSize="sm" color="coolGray.700">
-                Unlock powerfull time-saving tools for creating email delivery and
-                collecting marketing data
+                Elections at the local, state, and national level. 
+                Primary elections decide who gets to run for office in the final election.
               </Text>
               <Flex>
                 <Text mt="2" fontSize={12} fontWeight="medium" color="darkBlue.600">
@@ -41,7 +53,9 @@ export default function HomeScreen({ navigation }) {
         </Box>
 
         <Box alignItems="center">
-          <Pressable onPress={() => navigation.navigate('Candidates')} rounded="8" borderWidth="1" borderColor="coolGray.300" shadow="1" bg="coolGray.100" p="5">
+          <Pressable onPress={() => navigation.navigate('Elections', { screen: 'Races' })}
+            rounded="8" borderWidth="1" borderColor="coolGray.300" 
+            shadow="1" bg="coolGray.100" p="5">
             <Box>
               <HStack alignItems="center">
                 <Badge colorScheme="darkBlue" _text={{ color: "white" }} variant="solid" rounded="4">
@@ -62,8 +76,8 @@ export default function HomeScreen({ navigation }) {
                 <Avatar source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Senator_Joyce_Krawiec.jpg' }} />
               </HStack>
               <Text mt="2" fontSize="sm" color="coolGray.700">
-                Unlock powerfull time-saving tools for creating email delivery and
-                collecting marketing data
+                Joyce Krawiec serves in the North Carolina Senate. She is generally considered a conservative candidate.
+                She sponsored Burt's Law, one focused on ending nursing home abuse.
               </Text>
               <Flex>
                 <Text mt="2" fontSize={12} fontWeight="medium" color="darkBlue.600">
@@ -75,7 +89,10 @@ export default function HomeScreen({ navigation }) {
         </Box>
 
         <Box alignItems="center">
-          <Pressable onPress={() => navigation.navigate('Learn')} rounded="8" borderWidth="1" borderColor="coolGray.300" shadow="1" bg="coolGray.100" p="5">
+          <Pressable onPress={() => navigation.navigate('Elections', { screen: 'Learn' })}
+            rounded="8" borderWidth="1" borderColor="coolGray.300" 
+            shadow="1" bg="coolGray.100" p="5"
+          >
             <Box>
               <HStack alignItems="center">
                 <Badge colorScheme="darkBlue" _text={{ color: "white" }} variant="solid" rounded="4">
@@ -87,8 +104,8 @@ export default function HomeScreen({ navigation }) {
                 What will my ballot look like?
               </Text>
               <Text mt="2" fontSize="sm" color="coolGray.700">
-                Unlock powerfull time-saving tools for creating email delivery and
-                collecting marketing data
+                The voting ballot can be a difficult maze to navigate, particularly on busy elections like 
+                the General Elections. Find out the in's and out's of the ballot in our Votable Learn article.
               </Text>
               <Flex>
                 <Text mt="2" fontSize={12} fontWeight="medium" color="darkBlue.600">

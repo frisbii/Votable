@@ -22,6 +22,7 @@ export default function ElectionsBottomTabs() {
 
         headerShown: false,
       })}
+      safeAreaInsets={{ bottom: 0 }}
     >
         <Tab.Screen name="Races" component={RacesScreen} />
         <Tab.Screen name="Learn" component={LearnScreen} />
