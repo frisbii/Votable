@@ -1,7 +1,7 @@
 # Votable
 > A groundbreaking new way to light the fires of action in your community.
 
-![Votable splash text](https://cdn.discordapp.com/attachments/1068979956790603826/1097690349067063367/background_logo.png?ex=66b2208d&is=66b0cf0d&hm=21ea39e059fed1ed03c91e878b85eebba10fc18a67040a738b9dd43c48318819&)
+![Votable splash text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/458/312/datas/gallery.jpg_)
 
 *Votable* is a simple, accessible voting dashboard for web, iOS, and Android, with a special focus towards providing information for local elections. The app includes previous election results, information about upcoming elections, and resources to get involved.
 
